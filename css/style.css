@@ -68,31 +68,34 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 	padding: 0;
 }
 
-h1 {
+h1, h2, h3, h4 {
 	font-weight: 100;
-	font-size: 9.333em;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 2.4em;
 }
 
 h2 {
-	font-size: 4.667em;
+	font-size: 1.667em;
+	line-height: 1.883em;
 }
 
 h3 {
-	font-size: 3.75em;
+	font-weight: 400;
+	font-size: 1.3em;
+	line-height: 2em;
+}
+
+h3 em {
+	font-weight: 100;
+	font-style: italic;
 }
 
 h4 {
-	font-weight: 100;
-	font-size: 2.833em;
-}
-
-h5 {
-	font-size: 2em;
-}
-
-h6 {
-	font-weight: 500;
-	font-size: 1.667em;
+	font-size: 1.125em;
+	line-height: 1.667em;
 }
 
 h5 + p {
@@ -103,7 +106,7 @@ h5 + p {
 p {
 	font-size: 1em;
 	margin-bottom: 10px;
-	line-height: 1.3em;
+	line-height: 1.667em;
 }
 
 em {
@@ -118,12 +121,10 @@ a {
 }
 
 a:link, a:visited {
-	color: #ddd;
 }
 
 a:hover, a:target {
 	font-weight: 700;
-	color: #ccc;
 }
 
 li {
@@ -139,7 +140,7 @@ li {
 /* header */
 
 header {
-	padding: 25px 0;
+	padding: 25px 25px 0;
 }
 
 /* nav */
@@ -152,6 +153,12 @@ nav ul li {
 	float: left;
 	padding: 80px 15px 0;
 	margin: 0 10px 25px;
+}
+
+nav ul li a {
+	font-size: 2em;
+	font-weight: 500;
+	text-transform: lowercase;
 }
 
 .subNav {
@@ -172,14 +179,96 @@ img {
 	width: 100%;
 }
 
+img[src*="logo"] {
+	width: 195px;
+}
+
+.splash {
+	margin-top: 25px;
+}
+
 img.dream {
 	border-radius: 50px;
 }
 
 .tribe, .character, .mainCharacter {
-	margin-top: 50px;
+	margin-top: 20px;
+	padding: 15px 0 35px;
+
 }
 
-.mainCharacter > h6, .character > h6, .tribe > h6 {
+.tribe > div > p, .character > div > p, .mainCharacter > div > p {
+	margin-right: 25px;
+}
+
+.mainCharacter > h2, .character > h2, .tribe > h2 {
 	margin-left: 25px;
+}
+
+.character > ul li {
+	line-height: 2em;
+}
+
+.creative, .mainCreative {
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+.creative > img, .mainCreative > img{
+	margin: 10px 0;
+}
+
+/* colors */
+
+/*#B81400
+#E84618
+#FFAF2D
+#24943C
+#0064E8*/
+
+body {
+	background: #222;
+	color: #ccc;
+}
+
+header {
+	border-bottom: 5px solid #FFAF2D;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #FFAF2D;
+}
+
+nav ul li a:hover, nav ul li a:target {
+	color: #703454;
+}
+
+a:link, a:visited {
+	color: #999;
+}
+
+h1 {
+	border-bottom: 3px solid #333;
+	margin-bottom: 25px;
+}
+
+.fire {
+	background: #B81400;
+}
+
+.carto {
+	background: #0064E8;
+}
+
+.cham {
+	background: #24943C;
+}
+
+.norm {
+	background: #ddd;
+	color: #333;
+}
+
+.creative {
+	background: #FFAF2D;
 }
