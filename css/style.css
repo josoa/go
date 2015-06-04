@@ -176,10 +176,10 @@ img.dream {
 	border-radius: 50px;
 }
 
-.tribe, .character {
-	margin-bottom: 25px;
+.tribe, .character, .mainCharacter {
+	margin-top: 50px;
 }
 
-.character > h6 {
+.mainCharacter > h6, .character > h6, .tribe > h6 {
 	margin-left: 25px;
 }
