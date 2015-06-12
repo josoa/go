@@ -11,6 +11,11 @@
 	clear: both;
 }
 
+@font-face {
+	font-family: 'Cookies and Cream';
+	src: url('../fonts/cookiesandcream-webfont.ttf') format("truetype");
+}
+
 /* grid */
 
 [_col] {
@@ -58,7 +63,7 @@
 /* typography */
 
 body {
-	font-family: 'Roboto' , 'Noto' , sans-serif;
+	font-family: 'Cookies and Cream';
 	font-weight: 400;
 	font-size: 16px;
 }
@@ -104,6 +109,7 @@ h5 + p {
 }
 
 p {
+	font-family: 'Roboto' , 'Noto' , sans-serif;
 	font-size: 1em;
 	margin-bottom: 10px;
 	line-height: 1.667em;
@@ -140,7 +146,7 @@ li {
 /* header */
 
 header {
-	padding: 25px 25px 0;
+	padding: 25px;
 }
 
 /* nav */
@@ -151,14 +157,28 @@ nav {
 
 nav ul li {
 	float: left;
-	padding: 80px 15px 0;
-	margin: 0 10px 25px;
+    
 }
 
 nav ul li a {
 	font-size: 2em;
+    line-height: 4em;
 	font-weight: 500;
 	text-transform: lowercase;
+    padding: 15px;
+
+}
+
+.nav, .socialMedia {
+    float: left;
+}
+
+.nav a {
+	margin: 0 15px;
+}
+
+.socialMedia a {
+    margin: 0 10px;
 }
 
 .subNav {
@@ -177,10 +197,6 @@ nav ul li a {
 
 img {
 	width: 100%;
-}
-
-img[src*="logo"] {
-	width: 195px;
 }
 
 .splash {
@@ -227,24 +243,24 @@ img.dream {
 #0064E8*/
 
 body {
-	background: #222;
-	color: #ccc;
+	background: #352136;
+	color: #cbcbcb;
 }
 
 header {
-	border-bottom: 5px solid #FFAF2D;
+	border-bottom: 5px solid #ffba49;
 }
 
 nav ul li a:link, nav ul li a:visited {
-	color: #FFAF2D;
+	color: #ffba49;
 }
 
 nav ul li a:hover, nav ul li a:target {
-	color: #703454;
+	color: #573558;
 }
 
 a:link, a:visited {
-	color: #999;
+	color: #69486a;
 }
 
 h1 {
@@ -253,19 +269,19 @@ h1 {
 }
 
 .fire {
-	background: #B81400;
+	background: #912727;
 }
 
 .carto {
-	background: #0064E8;
+	background: #123a6f;
 }
 
 .cham {
-	background: #24943C;
+	background: #2e6f3c;
 }
 
 .norm {
-	background: #ddd;
+	background: #cbcbcb;
 	color: #333;
 }
 
@@ -275,4 +291,16 @@ h1 {
 
 .mainCreative {
 	background: #23333E;
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 960px) {
+
+    body {
+    font-size: 14px;
+    }
+    
 }
