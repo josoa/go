@@ -94,7 +94,7 @@ h3 em {
 }
 
 h4 {
-	font-size: 1.125em;
+	font-size: 1.75em;
 	line-height: 1.667em;
 }
 
@@ -111,9 +111,16 @@ p {
 	line-height: 1.667em;
 }
 
+.norm p {
+    font-weight: 400;
+}
+
 em {
-	font-style: normal;
-	font-weight: 400;
+	font-style: italic;
+}
+
+strong {
+    font-weight: 400;
 }
 
 a {
@@ -238,14 +245,15 @@ img.dream {
 #FFAF2D
 #24943C
 #0064E8*/
-
 body {
-	background: #352136;
+    background: #000000;
+    background-image: url('../img/brick-wall-dark.png');
+    background-attachment: fixed;
 	color: #cbcbcb;
 }
 
 header {
-	border-bottom: 5px solid #ffba49;
+	border-bottom: 5px solid #69486a;
 }
 
 a:link, a:visited {
@@ -253,8 +261,8 @@ a:link, a:visited {
     transition: color 1s;
 }
 
-a:hover, a:target, a:active {
-    color: #ffba49;     
+a:hover, a:target, a:active, nav ul li a:link, nav ul li a:visited, a.subNav {
+    color: rgb(178, 61, 106);     
 }
 
 .nav a {
@@ -263,11 +271,7 @@ a:hover, a:target, a:active {
 }
 
 .nav a:hover, .nav a:target {
-    background: #ffba49;
-}
-
-nav ul li a:link, nav ul li a:visited, a.subNav {
-	color: #ffba49;
+    background: #cbcbcb;
 }
 
 nav ul li a:hover, nav ul li a:target {
@@ -280,20 +284,20 @@ h1 {
 }
     
 .fire {
-	background: #912727;
+	background: rgba(145, 39, 39, 0.63);
 }
 
 .carto {
-	background: #123a6f;
+	background: rgba(18, 58, 111, 0.63);
 }
 
 .cham {
-	background: #2e6f3c;
+	background: rgba(46, 111, 60, 0.63);
 }
 
 .norm {
-	background: #cbcbcb;
-	color: #333;
+	background: rgba(203, 203, 203, 0.63);
+	color: #222;
 }
 
 .creative {
